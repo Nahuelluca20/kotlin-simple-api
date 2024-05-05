@@ -56,28 +56,3 @@ fun getOrderById(call: ApplicationCall): Order? {
 
     return order
 }
-
-
-//    route("/order") {
-//        get {
-//            if (orderStorage.isNotEmpty()) {
-//                call.respond(orderStorage)
-//            } else {
-//                call.respondText("No orders found", status = HttpStatusCode.OK)
-//            }
-//        }
-//
-//        get("{id?}") {}
-//
-//        get("{id?}/total") {}
-//
-//        post {
-//            val order = call.receive<Order>()
-//            orderStorage.add(order)
-//
-//            call.respondText("Order added correctly", status = HttpStatusCode.Created)
-//        }
-//
-//        delete { }
-//    }
-
