@@ -42,7 +42,7 @@ fun Route.totalizeOrderRoute() {
 }
 
 fun Route.postOrder() {
-    post {
+    post("order") {
         val order = call.receive<Order>()
         orderStorage.add(order)
 
